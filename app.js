@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 
 const port = process.env.PORT || 3000;
 
+
 // Importar Rutas
 var appRoutes = require('./routes/app');
 var usuarioRoutes = require('./routes/usuario');
@@ -24,7 +25,7 @@ app.use(bodyParser.json())
 
 
 //Conexion a la base de datos
-mongoose.connection.openUri('mongodb://localhost:27017/bailaConmigoDB', (err, res) => {
+mongoose.connection.openUri(process.env.URLDB, (err, res) => {
 
     if (err) throw err;
     console.log('Base de datos: online');
