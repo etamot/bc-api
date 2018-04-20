@@ -13,6 +13,7 @@ var loginRoutes = require('./routes/login');
 var ninioRoutes = require('./routes/ninio');
 var rutinaRoutes = require('./routes/rutina');
 var corporacionRoutes = require('./routes/corporacion');
+var puntuacionRoutes = require('./routes/puntuacion');
 
 //Inicializar variables
 var app = express();
@@ -37,6 +38,7 @@ app.use('/usuario', usuarioRoutes);
 app.use('/login', loginRoutes);
 app.use('/ninio', ninioRoutes);
 app.use('/corporacion', corporacionRoutes);
+app.use('/puntuacion', puntuacionRoutes);
 app.use('/rutina', rutinaRoutes);
 app.use('/', appRoutes);
 
