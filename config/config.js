@@ -1,0 +1,1 @@
+module.exports.SEED = 'firma-rozi-123-456-789';
