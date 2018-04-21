@@ -15,7 +15,7 @@ app.get('/', (req, res, next) => {
                 if (err) {
                     return res.status(500).json({
                         ok: false,
-                        mensaje: 'Error cargando rutinas',
+                        mensaje: 'Error cargando rutsinas',
                         error: err
                     });
                 }
