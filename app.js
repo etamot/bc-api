@@ -3,6 +3,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
+
 const port = process.env.PORT || 3000;
 
 
@@ -17,6 +18,8 @@ var puntuacionRoutes = require('./routes/puntuacion');
 
 //Inicializar variables
 var app = express();
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 
 // Body Parser

@@ -64,7 +64,7 @@ app.post('/', (req, res) => {
 // BORRAR UNA PUNTUACION
 // ==========================
 
-app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
+app.delete('/:id', (req, res) => {
     var id = req.params.id;
     Ninio.findByIdAndRemove(id, (err, niñoBorrado) => {
         if (err) {
