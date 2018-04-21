@@ -8,8 +8,7 @@ var app = express();
 
 app.get('/', (req, res, next) => {
 
-    Rutina.find({})
-        .populate(nombre, email)
+    Rutina.find({}, 'nombre ')
         .exec(
             (err, rutinas) => {
                 if (err) {
