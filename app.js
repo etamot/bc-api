@@ -23,7 +23,7 @@ var app = express();
 // Body Parser
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true, parameterLimit: 50000 }));
 
 
 //Conexion a la base de datos
