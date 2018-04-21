@@ -9,6 +9,7 @@ var app = express();
 app.get('/', (req, res, next) => {
 
     Rutina.find({})
+        .populate(nombre, email)
         .exec(
             (err, rutinas) => {
                 if (err) {
