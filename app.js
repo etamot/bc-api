@@ -42,7 +42,7 @@ app.use('/ninio', ninioRoutes);
 app.use('/corporacion', corporacionRoutes);
 app.use('/puntuacion', puntuacionRoutes);
 app.use('/rutina', rutinaRoutes);
-app.use('/busquedaRutina', busquedaRutina);
+app.use('/busqueda', busquedaRutina);
 app.use('/', appRoutes);
 
 //Escuchar peticiones
