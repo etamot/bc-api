@@ -15,6 +15,7 @@ var ninioRoutes = require('./routes/ninio');
 var rutinaRoutes = require('./routes/rutina');
 var corporacionRoutes = require('./routes/corporacion');
 var puntuacionRoutes = require('./routes/puntuacion');
+var busquedaRutina = require('./routes/busquedaRutina');
 
 //Inicializar variables
 var app = express();
@@ -41,6 +42,7 @@ app.use('/ninio', ninioRoutes);
 app.use('/corporacion', corporacionRoutes);
 app.use('/puntuacion', puntuacionRoutes);
 app.use('/rutina', rutinaRoutes);
+app.use('/busquedaRutina', busquedaRutina);
 app.use('/', appRoutes);
 
 //Escuchar peticiones
