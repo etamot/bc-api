@@ -39,8 +39,10 @@ app.post('/', (req, res) => {
     var puntuacion = new Puntuacion({
         ninio: body.ninio,
         rutina: body.rutina,
-        puntuacion: body.puntuacion
-            //img: body.img,
+        puntuacion: body.puntuacion,
+        puntajeBueno: body.puntajeBueno;
+        puntajeMalo: body.puntajeMalo;
+        //img: body.img,
     });
 
     puntuacion.save((err, puntuacionGuardada) => {
