@@ -9,9 +9,9 @@ var app = express();
 
 app.get('/', (req, res, next) => {
 
-    Puntuacion.find({})
+    Puntuacion.find({}, )
         .populate('ninio')
-        .populate('rutina')
+        .populate('rutina', 'nombre')
         .exec(
             (err, puntuaciones) => {
                 if (err) {
