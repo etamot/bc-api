@@ -40,9 +40,9 @@ app.post('/', (req, res) => {
         ninio: body.ninio,
         rutina: body.rutina,
         puntuacion: body.puntuacion,
-        puntajeBueno: body.puntajeBueno;
-        puntajeMalo: body.puntajeMalo;
-        //img: body.img,
+        puntajeBueno: body.puntajeBueno,
+        puntajeMalo: body.puntajeMalo
+            //img: body.img,
     });
 
     puntuacion.save((err, puntuacionGuardada) => {
