@@ -41,7 +41,8 @@ app.post('/', (req, res) => {
         rutina: body.rutina,
         puntuacion: body.puntuacion,
         puntajeBueno: body.puntajeBueno,
-        puntajeMalo: body.puntajeMalo
+        puntajeMalo: body.puntajeMalo,
+        media: body.media
             //img: body.img,
     });
 

@@ -7,6 +7,7 @@ var puntuacionSchema = new Schema({
     puntuacion: { type: String, required: [true, 'El puntaje es necesario'] },
     puntajeBueno: { type: String, required: [true, 'El puntaje bueno es necesario'] },
     puntajeMalo: { type: String, required: [true, 'El puntaje malo es necesario'] },
+    media: { type: String, required: [true, 'La media es requerida'] }
 }, { collection: 'puntuaciones' });
 
 module.exports = mongoose.model('Puntuacion', puntuacionSchema);
