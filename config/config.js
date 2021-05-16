@@ -13,7 +13,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/bailaConmigoDB';
 } else {
-    urlDB = 'mongodb://bc-user:guirova18@ds151809.mlab.com:51809/bailaconmigodb'
+    urlDB = 'mongodb+srv://bailaconmigo:1234@cluster0.oztqt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 }
 
 process.env.URLDB = urlDB;
